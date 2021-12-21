@@ -16,7 +16,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
     <div class="weather-app">
+      <div class="overview">
       <h1>New York</h1>
       <ul>
         <li>Friday 05:00</li>
@@ -24,12 +26,17 @@
       </ul>
       <div class="row">
         <div class="col-6">
+          <div class="clearfix weather-temperature">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="weather icon"
+            class="float-left"
           />
-          12°C | °F
-        </div>
+          <span class="float-left">
+          <strong>12</strong><small class="units">°C| <a href="#">°F</a></small>
+          </span>
+      </div>
+      </div>
         <div class="col-6">
           <ul>
             <li>Precipitiation: 0%</li>
@@ -38,7 +45,8 @@
           </ul>
         </div>
         </div>
-      
+        </div>
+      </div>
       <small>
         <a href="https://github.com/lydiacowgill2/vanilla-weather-app">Open-source code</a> by Lydia Cowgill 
       </small>
